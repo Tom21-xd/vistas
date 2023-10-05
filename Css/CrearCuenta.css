@@ -17,11 +17,14 @@ body{
     text-align: center;
 }
 
+.contenedor{
+    width: 70%;
+    height: 100%;
+}
+
 .contenedor .titulos{
     text-align: center;
     margin: 100px 0px 100px 0px;
-    width: 900px;
-    height: 150px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -31,6 +34,7 @@ body{
 
 .contenedor .titulos h1{
     font-size: 50px;
+    margin-bottom: 75px;
 }
 
 .contenedor .titulos p{
@@ -40,7 +44,6 @@ body{
 .contenedor .datos{
     background-color: white;
     border: 5px solid #000;
-
 }
 
 .contenedor .inputbox{
@@ -64,13 +67,13 @@ body{
 }
 
 .contenedor .inputbox .inputfield input{
-    height: 40px;
+    height: 50px;
     font-size: 15px;
     font-size: 20px;
 }
 
 .contenedor .inputbox .inputfield select{
-    height: 40px;
+    height: 50px;
     font-size: 15px;
     font-size: 20px;
 }
@@ -102,8 +105,7 @@ input[type="checkbox"] {
 .contenedor .botones .btn button{
     width: 100%;
     height: 100%;
-    font-size: 20px;
-    
+    font-size: 20px;   
 }
 
 .contenedor .botones .btn i{
@@ -111,5 +113,21 @@ input[type="checkbox"] {
     font-size: 50px;
     top: 2px;
     left: 5px;
-    
+}
+
+@media (max-width: 911px) {
+    .contenedor .inputbox{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        margin-top: 0px;
+    }
+
+    .contenedor .inputbox .inputfield{
+        width: 100%;
+        text-align: center;
+        justify-content: center;
+        margin-top: 50px;
+    }
 }
